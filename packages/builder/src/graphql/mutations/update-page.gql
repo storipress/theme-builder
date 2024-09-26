@@ -1,0 +1,9 @@
+mutation UpdatePage($input: UpdatePageInput!) {
+  updatePage(input: $input) {
+    id
+    title
+    draft
+    seo
+    order
+  }
+}

@@ -1,0 +1,11 @@
+query ListLayouts {
+  layouts {
+    id
+    name
+    template
+    data
+    preview {
+      url
+    }
+  }
+}

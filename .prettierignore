@@ -1,0 +1,7 @@
+packages/generator/site-templates/lib/blocks.js
+packages/generator/site-templates/lib/formats.js
+packages/generator/site-templates/lib/subscribes.js
+packages/generator/site-templates/plugins/storipress.js
+packages/generator/site-templates/variables.js
+packages/elements/display/common/image-focus
+CHANGELOG.md

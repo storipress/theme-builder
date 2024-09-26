@@ -1,0 +1,37 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`article elements > should have the same properties as the site variant 1`] = `
+[
+  "SubscribeEmail",
+  "SubscribeForm",
+  "LinkElement",
+  "ResponsiveImage",
+  "Site",
+  "ArticleInfo",
+  "Logo",
+  "Icon",
+  "Article",
+  "ArticleBlock",
+  "ArticleContent",
+  "AuthorList",
+  "AuthorName",
+  "Authors",
+  "Blockquote",
+  "ColorArea",
+  "Content",
+  "Date",
+  "Description",
+  "Desk",
+  "Header",
+  "HeaderBlock",
+  "Header1",
+  "Header2",
+  "HeadlineCaption",
+  "HeadlineImage",
+  "HeadlineWrapper",
+  "Paragraph",
+  "Title",
+  "TitleElement",
+  "Template",
+]
+`;

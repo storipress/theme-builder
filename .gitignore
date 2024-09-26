@@ -1,0 +1,53 @@
+node_modules
+/.idea
+/.scannerwork
+/.tmuxinator.yml
+/.eslintcache
+coverage
+
+.DS_Store
+
+### yarn
+# https://yarnpkg.com/advanced/qa#which-files-should-be-gitignored
+
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+
+# if you are NOT using Zero-installs, then:
+# comment the following lines
+# !.yarn/cache
+
+# and uncomment the following lines
+.pnp.*
+
+*.txz
+/sites
+/dist
+
+### vscode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+*.cache.json
+
+# Local Netlify folder
+.netlify
+
+### Vagrant ###
+# General
+.vagrant/
+
+# Log files (if you are creating logs in debug mode, uncomment this)
+# *.log
+
+### Vagrant Patch ###
+*.box
+
+/tmp

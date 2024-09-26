@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "jsx": "preserve",
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"],
+    "baseUrl": ".",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "paths": {
+      "*": ["types/*"],
+      "@storipress/article": ["../elements/article-elements"],
+      "@storipress/block": ["../elements/block-elements"],
+      "@jraft/article": ["../elements/article-elements"],
+      "@jraft/block": ["../elements/block-elements"]
+    },
+    "resolveJsonModule": true,
+    "types": ["webpack-env"],
+    "allowJs": true,
+    "strict": true,
+    "importHelpers": true,
+    "noEmit": true,
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true
+  },
+  "include": [
+    "articles/**/*.ts",
+    "articles/**/*.tsx",
+    "articles/**/*.vue",
+    "blocks/**/*.ts",
+    "blocks/**/*.ts",
+    "blocks/**/*.tsx",
+    "other-blocks/**/*.ts",
+    "other-blocks/**/*.ts",
+    "other-blocks/**/*.tsx",
+    "other-pages/**/*.ts",
+    "other-pages/**/*.ts",
+    "other-pages/**/*.tsx",
+    "*.d.ts",
+    "../shared-typedefs/*"
+  ],
+  "exclude": ["node_modules", "../../node_modules/*"]
+}

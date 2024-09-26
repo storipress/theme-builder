@@ -1,0 +1,16 @@
+query GetReleases {
+  releases(first: 10, page: 1) {
+    paginatorInfo {
+      total
+      currentPage
+      count
+      perPage
+    }
+    data {
+      id
+      state
+      meta
+      created_at
+    }
+  }
+}

@@ -1,0 +1,10 @@
+query GetMe {
+  me {
+    id
+    intercomHashIdentity: intercom_hash_identity
+    name: full_name
+    avatar
+    email
+    role
+  }
+}

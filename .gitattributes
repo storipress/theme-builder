@@ -1,0 +1,4 @@
+.yarn/* linguist-vendored
+packages/generator/site-templates/tailwind.css linguist-vendored
+packages/editor/src/generated/* linguist-generated
+packages/builder/src/generated/* linguist-generated

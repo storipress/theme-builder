@@ -1,0 +1,9 @@
+mutation CreatePage($input: CreatePageInput!) {
+  createPage(input: $input) {
+    id
+    title
+    draft
+    seo
+    order
+  }
+}

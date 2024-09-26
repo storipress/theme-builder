@@ -1,0 +1,8 @@
+mutation CreateLayout($input: CreateLayoutInput!) {
+  createLayout(input: $input) {
+    id
+    name
+    template
+    data
+  }
+}

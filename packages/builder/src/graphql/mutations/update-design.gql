@@ -1,0 +1,8 @@
+mutation UpdateDesign($input: UpdateDesignInput!) {
+  updateDesign(input: $input) {
+    key
+    draft
+    current
+    seo
+  }
+}

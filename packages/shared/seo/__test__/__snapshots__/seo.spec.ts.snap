@@ -1,0 +1,20 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`resolveSEOFromRaw > resolve seo with sepcial character 1`] = `
+{
+  "inject": {
+    "footer": "",
+    "header": "",
+  },
+  "meta": {
+    "description": "The Beijing 2022 Winter Olympic Games has come to an official end with the Closing Ceremony, with all eyes now on Milano Cortina 2026!",
+    "title": "Beijing 2022 Closing Ceremony Recap - 再见 Beijing, Ciao Milano Cortina! - EOTC",
+  },
+  "og": {
+    "description": "The Beijing 2022 Winter Olympic Games has come to an official end with the Closing Ceremony, with all eyes now on Milano Cortina 2026!",
+    "title": "Beijing 2022 Closing Ceremony Recap - 再见 Beijing, Ciao Milano Cortina! - EOTC",
+  },
+  "ogImage": "",
+  "slug": "beijing-2022-closing-ceremony-recap-再见-beijing-ciao-milano-cortina-ha5u",
+}
+`;

@@ -1,0 +1,19 @@
+query ListDesks {
+  desks {
+    id
+    name
+    slug
+    order
+    seo
+    desks {
+      id
+    }
+    published_articles_count
+    layout {
+      id
+      name
+      template
+      data
+    }
+  }
+}

@@ -1,0 +1,27 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`deserialize > handle Map and Set 1`] = `
+{
+  "map": Map {
+    "a" => "b",
+  },
+  "set": Set {
+    "a",
+    "b",
+  },
+}
+`;
+
+exports[`deserialize > handle freezed object 1`] = `
+{
+  "freeze": {
+    "foo": "bar",
+  },
+}
+`;
+
+exports[`serialize > handle Map and Set 1`] = `"{"map":{"$$type":"map","value":[["a","b"]]},"set":{"$$type":"set","value":["a","b"]}}"`;
+
+exports[`serialize > handle freezed array 1`] = `"{"freeze":{"$$type":"freezeArray","value":[1,2,3]}}"`;
+
+exports[`serialize > handle freezed object 1`] = `"{"freeze":{"$$type":"freeze","value":{"foo":"bar"}}}"`;

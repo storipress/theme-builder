@@ -1,0 +1,10 @@
+query GetPages {
+  pages {
+    id
+    title
+    draft
+    current
+    seo
+    order
+  }
+}

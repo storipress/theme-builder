@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25">
+  <defs><circle id="a" cx="12.5" cy="12.5" r="12.5" /></defs>
+  <g fill="currentColor" fill-rule="evenodd">
+    <use fill="#000" xlink:href="#a" />
+    <use fill="#2B8BF2" xlink:href="#a" />
+    <g stroke="#FFF" stroke-linecap="round" stroke-width="2"><path d="M12.5 17V8M8 12.5h9" /></g>
+  </g>
+</svg>

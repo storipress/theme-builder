@@ -1,0 +1,7 @@
+query GetSiteCustomSite {
+  site {
+    id
+    name
+    custom_site_template
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "jsx": "preserve",
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"],
+    "baseUrl": ".",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "paths": {
+      "*": ["types/*"]
+    },
+    "types": ["vue-router", "resize-observer-browser", "jest", "node"],
+    "allowJs": true,
+    "strict": true,
+    "importHelpers": true,
+    "noEmit": true,
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "schema/**/*.ts",
+    "schema/**/*.tsx",
+    "schema/**/*.vue",
+    "modules/**/*.ts",
+    "modules/**/*.tsx",
+    "core/**/*.ts",
+    "core/**/*.tsx",
+    "core/**/*.vue",
+    "core/tiptap/render-cursor.jsx",
+    "example/**/*.ts",
+    "example/**/*.vue",
+    "rich-input/**/*.ts",
+    "rich-input/**/*.tsx",
+    "rich-input/**/*.vue",
+    "unsplash-picker/**/*.ts",
+    "unsplash-picker/**/*.tsx",
+    "unsplash-picker/**/*.vue",
+    "virtual-viewport/**/*.ts",
+    "virtual-viewport/**/*.tsx",
+    "virtual-viewport/**/*.vue",
+    "tests/**/*.ts",
+    "tests/**/*.tsx",
+    "../shared-typedefs/*",
+    "schema/resource/render-resource-impl.jsx",
+    "./jest.setup.ts",
+    "auto-imports.d.ts"
+  ],
+  "exclude": ["node_modules"]
+}

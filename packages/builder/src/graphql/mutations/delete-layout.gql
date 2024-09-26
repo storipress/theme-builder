@@ -1,0 +1,8 @@
+mutation DeleteLayout($id: ID!) {
+  deleteLayout(id: $id) {
+    id
+    name
+    template
+    data
+  }
+}

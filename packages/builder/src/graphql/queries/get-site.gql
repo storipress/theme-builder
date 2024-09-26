@@ -1,0 +1,17 @@
+query GetSite {
+  site {
+    id
+    workspace
+    custom_domain
+    customer_site_domain
+    name
+    description
+    favicon
+    logo {
+      url
+    }
+    timezone
+    initialized
+    socials
+  }
+}

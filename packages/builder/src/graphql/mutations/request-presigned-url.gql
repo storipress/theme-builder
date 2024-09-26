@@ -1,0 +1,7 @@
+mutation RequestPresignedUploadURL {
+  requestPresignedUploadURL {
+    url
+    key
+    signature
+  }
+}

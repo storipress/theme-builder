@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "jsx": "preserve",
+    // "resolveJsonModule": true,
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "baseUrl": ".",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "types": ["webpack-env", "@nuxt/types", "vuex", "vue-router", "jest"],
+    "allowJs": true,
+    "strict": true,
+    "declaration": true,
+    "importHelpers": true,
+    "noEmit": true,
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "common/**/*.ts",
+    "common/**/*.tsx",
+    "common/**/*.vue",
+    "article-elements/**/*.ts",
+    "article-elements/**/*.tsx",
+    "article-elements/**/*.vue",
+    "block-elements/**/*.ts",
+    "block-elements/**/*.tsx",
+    "block-elements/**/*.vue",
+    "display/**/*.ts",
+    "display/**/*.tsx",
+    "display/**/*.vue",
+    "sdk/**/*.ts",
+    "sdk/**/*.tsx",
+    "sdk/**/*.vue",
+    "shims-vue.d.ts",
+    "global.d.ts",
+    "typedefs/**/*.ts",
+    "../shared-typedefs/*"
+  ],
+  "exclude": ["node_modules", "../../node_modules/*"]
+}

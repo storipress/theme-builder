@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "jsx": "preserve",
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"],
+    "baseUrl": ".",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "paths": {
+      "*": ["types/*"],
+      "vuex-hooks": ["./vuex-hooks"],
+      "@storipress/article": ["../elements/article-elements"],
+      "~/*": ["src/*"]
+    },
+    "resolveJsonModule": true,
+    "types": ["webpack-env", "vite/client", "resize-observer-browser", "user-agent-data-types"],
+    "allowJs": true,
+    "strict": true,
+    "importHelpers": true,
+    "noEmit": true,
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "types/**/*.ts",
+    "tests/**/*.ts",
+    "tests/**/*.tsx",
+    "../shared-typedefs/*",
+    "src/track.js",
+    "auto-imports.d.ts"
+  ],
+  "exclude": ["node_modules", "../../node_modules/*"],
+  "vueCompilerOptions": {
+    "target": 2.7
+  }
+}

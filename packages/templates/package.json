@@ -1,0 +1,30 @@
+{
+  "name": "@storipress/templates",
+  "scripts": {
+    "update:block": "tsx scripts/block-mapper.mts",
+    "update:template": "tsx scripts/template-mapper.mts",
+    "update:dropcap": "tsx scripts/dropcap-mapper.mts",
+    "update:blockquote": "tsx scripts/blockquote-mapper.mts",
+    "update:all": "yarn update:block && yarn update:template && yarn update:dropcap && yarn update:blockquote"
+  },
+  "devDependencies": {
+    "@types/eslint": "8.56.10",
+    "@types/imagemin": "7.0.1",
+    "@types/lodash": "4.17.5",
+    "@types/prettier": "3.0.0",
+    "eslint": "8.57.1",
+    "eslint-plugin-chai-expect": "3.1.0",
+    "eslint-plugin-chai-friendly": "0.8.0",
+    "imagemin": "8.0.1",
+    "imagemin-webp": "7.0.0",
+    "lodash": "4.17.21",
+    "p-map": "7.0.2",
+    "prettier": "3.3.2",
+    "prettier-plugin-tailwindcss": "0.6.4",
+    "shared": "workspace:*",
+    "tsx": "4.19.1",
+    "type-fest": "4.26.1",
+    "vue": "2.7.16",
+    "zx": "8.1.8"
+  }
+}

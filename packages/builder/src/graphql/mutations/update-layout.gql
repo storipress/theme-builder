@@ -1,0 +1,8 @@
+mutation UpdateLayout($input: UpdateLayoutInput!) {
+  updateLayout(input: $input) {
+    id
+    name
+    template
+    data
+  }
+}

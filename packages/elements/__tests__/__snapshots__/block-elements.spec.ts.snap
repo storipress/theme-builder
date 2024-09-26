@@ -1,0 +1,35 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`block elements > should have the same properties as the site variant 1`] = `
+[
+  "HeadlineImage",
+  "LinkElement",
+  "ResponsiveImage",
+  "Site",
+  "SubscribeEmail",
+  "SubscribeForm",
+  "Article",
+  "ArticleBlock",
+  "Authors",
+  "Block",
+  "ColorArea",
+  "DeskList",
+  "DeskSection",
+  "FooterBlock",
+  "HeroBlock",
+  "Logo",
+  "Nav",
+  "Navigation",
+  "PageList",
+  "Portal",
+  "RawHtml",
+  "SearchElement",
+  "SiteInfo",
+  "Spacing",
+  "SpacingProvider",
+  "SwappableImage",
+  "TextElement",
+  "TextInput",
+  "Icon",
+]
+`;

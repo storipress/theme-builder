@@ -1,0 +1,44 @@
+query ListArticles($page: Int! = 1, $desk_ids: [ID!], $first: Int! = 30, $featured: Boolean) {
+  articles(
+    page: $page
+    desk_ids: $desk_ids
+    first: $first
+    published: true
+    featured: $featured
+    sortBy: [{ column: PUBLISHED_AT, order: DESC }]
+  ) {
+    paginatorInfo {
+      hasMorePages
+    }
+    data {
+      id
+      title
+      desk {
+        id
+        name
+        slug
+        desk {
+          id
+          name
+          slug
+        }
+      }
+      featured
+      slug
+      blurb
+      cover
+      created_at
+      document
+      published
+      published_at
+      stage {
+        ready
+      }
+      seo
+      authors {
+        id
+        name: full_name
+      }
+    }
+  }
+}

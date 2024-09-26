@@ -1,0 +1,27 @@
+import type { IFramely } from './iframely-types'
+
+import got from 'got'
+
+export * from './iframely-types'
+
+export const IFRAMELY_OPTIONS = {
+  iframe: '1',
+  omit_script: '1',
+  html5: '1',
+}
+
+const client = got.extend({
+  searchParams: IFRAMELY_OPTIONS,
+})
+
+const ENDPOINT = 'https://cdn.iframe.ly/api/iframely'
+
+export type IframelyClient = ReturnType<typeof createIframelyClient>
+
+export function createIframelyClient(key: string) {
+  return {
+    oEmbed(url: string, params = {}): Promise<IFramely> {
+      return client.get(ENDPOINT, { searchParams: { ...params, key, url } }).json()
+    },
+  }
+}

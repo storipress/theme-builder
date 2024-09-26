@@ -1,0 +1,61 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:js-app", "schedule:earlyMondays", ":maintainLockFilesWeekly", "helpers:disableTypesNodeMajor"],
+  "postUpdateOptions": ["yarnDedupeHighest"],
+  "packageRules": [
+    {
+      "matchPackageNames": ["@vueuse/core", "@vueuse/integrations", "@vueuse/router", "@vueuse/math"],
+      "groupName": "VueUse monorepo"
+    },
+    {
+      "matchPackageNames": ["@playwright/test", "playwright"],
+      "groupName": "Playwright"
+    },
+    {
+      "matchPackagePatterns": ["@tiptap/*"],
+      "groupName": "TipTap"
+    },
+    {
+      "matchPackagePatterns": ["prosemirror-*"],
+      "groupName": "ProseMirror"
+    },
+    {
+      "matchPackagePatterns": ["*"],
+      "excludePackagePatterns": [
+        "@storipress/*",
+        "@tiptap/*",
+        "prosemirror-*",
+        "yjs",
+        "y-prosemirror",
+        "@headlessui/vue"
+      ],
+      "matchDepTypes": ["dependencies"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "groupName": "all non-major dependencies",
+      "groupSlug": "all-dependencies-minor-patch"
+    },
+    {
+      "matchPackagePatterns": ["*"],
+      "matchDepTypes": ["devDependencies"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "groupName": "all non-major devDependencies",
+      "groupSlug": "all-devDependencies-minor-patch"
+    },
+    {
+      "matchPackagePatterns": ["*"],
+      "rangeStrategy": "pin"
+    },
+    {
+      "enabled": false,
+      "matchPackagePatterns": ["yjs", "y-prosemirror"]
+    },
+    {
+      "matchDepTypes": ["engines", "peerDependencies"],
+      "rangeStrategy": "auto"
+    },
+    {
+      "matchPackagePatterns": ["@storipress/*"],
+      "schedule": ["at any time"]
+    }
+  ]
+}

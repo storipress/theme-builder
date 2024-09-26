@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  button:focus {
+    outline: none;
+  }
+
+  * {
+    font-family: 'Lato', sans-serif;
+  }
+}
+
+@layer utilities {
+  .transition-opacity {
+    transition-property: opacity;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition-duration: 50ms;
+  }
+
+  .transition-button-menu {
+    transition-property: background-color;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition-duration: 50ms;
+  }
+
+  .transition-button-important {
+    transition-property: background-color, box-shadow;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition-duration: 100ms, 200ms;
+  }
+
+  .transition-button-transparent {
+    transition-property: background-color;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition-duration: 200ms;
+  }
+
+  .transition-hover-expand {
+    transition-property: width, box-shadow;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition-duration: 100ms, 200ms;
+  }
+}
